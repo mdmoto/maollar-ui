@@ -1,0 +1,85 @@
+// 基础颜色变量
+$light_content_color: #666666;
+$bg_color: #f1f6fa;
+$main_color: #ff5c58;
+$theme_color: #FF5C58;  // 主题色
+$border_color: #e8e8e8;
+$text_color: #333333;
+$light_text_color: #999999;
+$success_color: #52c41a;
+$warning_color: #faad14;
+$error_color: #f5222d;
+
+// 标题颜色变量
+$title_color: #333333;
+$light_title_color: #666666;
+$dark_title_color: #000000;
+
+// 更多颜色变量
+$primary_color: #1890ff;
+$secondary_color: #f0f2f5;
+$disabled_color: #f5f5f5;
+$hover_color: #40a9ff;
+$active_color: #096dd9;
+
+// 基础mixin定义
+@mixin content_color($color) {
+  color: $color;
+}
+
+@mixin title_color($color) {
+  color: $color;
+}
+
+@mixin white_background_color() {
+  background-color: #ffffff;
+}
+
+@mixin background_color($color) {
+  background-color: $color;
+}
+
+@mixin border_radius($radius: 4px) {
+  border-radius: $radius;
+}
+
+@mixin box_shadow($shadow: 0 2px 4px rgba(0, 0, 0, 0.1)) {
+  box-shadow: $shadow;
+}
+
+@mixin flex_center() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin text_overflow() {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@mixin transition($property: all, $duration: 0.3s, $timing: ease) {
+  transition: $property $duration $timing;
+}
+
+@mixin button_style($bg: $main_color, $color: #fff) {
+  background-color: $bg;
+  color: $color;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  @include transition();
+  
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+// 通用样式
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}

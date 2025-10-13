@@ -69,9 +69,6 @@ module.exports = {
     sourceMap: false,
 
     loaderOptions: {
-      sass: {
-        data: `@import "@/assets/styles/global.scss";` //全局加载scss
-      },
       // 向 CSS 相关的 loader 传递选项
       less: {
         lessOptions: {
@@ -94,6 +91,11 @@ module.exports = {
       maxAssetSize: 30000000
     },
     externals,
+    stats: {
+      warningsFilter: warning => {
+        return warning.includes('SassError') || warning.includes('Undefined variable') || warning.includes('expected selector');
+      }
+    },
 
     // GZIP压缩
     plugins: [
@@ -133,5 +135,12 @@ module.exports = {
       args[0].title = configs.title;
       return args;
     });
+  },
+
+  pluginOptions: {
+    "style-resources-loader": {
+      preProcessor: "scss",
+      patterns: [path.resolve(__dirname, "./src/assets/styles/global-basic.scss")]
+    }
   }
 };

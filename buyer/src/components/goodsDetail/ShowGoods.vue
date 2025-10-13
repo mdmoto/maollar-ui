@@ -621,7 +621,7 @@ export default {
 }
 
 .wrapper {
-  @include white_background_color();
+  background-color: #fff;
 }
 
 .item-num {

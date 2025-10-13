@@ -90,7 +90,7 @@ export default {
 .ivu-menu-dark.ivu-menu-vertical .ivu-menu-item-active:not(.ivu-menu-submenu), .ivu-menu-dark.ivu-menu-vertical .ivu-menu-submenu-title-active:not(.ivu-menu-submenu){
     color: $theme_color;
 }
-/deep/.ivu-menu-vertical .ivu-menu-item-group-title {
+::v-deep.ivu-menu-vertical .ivu-menu-item-group-title {
     height: 40px;
     line-height: 40px;
     padding-left: 20px;

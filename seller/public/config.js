@@ -3,16 +3,16 @@ var BASE = {
    * @description api请求基础路径
    */
   API_DEV: {
-    common: "https://common-api.maollar.cn",
-    buyer: "https://buyer-api.maollar.cn",
-    seller: "https://store-api.maollar.cn",
-    manager: "https://admin-api.maollar.cn",
+    common: "http://localhost:9999",
+    buyer: "http://localhost:9999",
+    seller: "http://localhost:9999",
+    manager: "http://localhost:9999",
   },
   API_PROD: {
-    common: "https://common-api.maollar.cn",
-    buyer: "https://buyer-api.maollar.cn",
-    seller: "https://store-api.maollar.cn",
-    manager: "https://admin-api.maollar.cn",
+    common: "http://localhost:9999",
+    buyer: "http://localhost:9999",
+    seller: "http://localhost:9999",
+    manager: "http://localhost:9999",
   },
   /**
    * @description // 跳转买家端地址 pc端

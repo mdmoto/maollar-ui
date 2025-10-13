@@ -546,10 +546,10 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-/deep/ .ivu-table-wrapper {
+::v-deep .ivu-table-wrapper {
   width: 100%;
 }
-/deep/ .ivu-card {
+::v-deep .ivu-card {
   width: 100%;
 }
 .face {
