@@ -3,9 +3,10 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "vue-cli-service serve",
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build"
+    "build": "vue-cli-service build",
+    "dev": "vue-cli-service serve",
+    "cf:build": "npm install --legacy-peer-deps && npm run build"
   },
   "dependencies": {
     "@amap/amap-jsapi-loader": "0.0.7",
