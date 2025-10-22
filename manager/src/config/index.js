@@ -10,7 +10,7 @@ module.exports = {
   aMapKey: "7f11113750315d8543daaf5c3ba353ca", //高德web端js申请的api key
   aMapSwitch:false, //是否开启高德定位
   website: "https://www.maollar.cn", //官网地址
-  enableCDN: true, //生产环境 是否启用cdn加载 vue等js
+  enableCDN: false, //生产环境 是否启用cdn加载 vue等js
   port: 10003, //端口
   inputMaxLength:'140', //全局输入框默认最大输入长度字
   mainColor:"#ff5c58", //主题色
