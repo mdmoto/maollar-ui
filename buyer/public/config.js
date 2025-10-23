@@ -9,9 +9,9 @@ var BASE = {
     manager: "http://localhost:9999"
   },
   API_PROD: {
-    common: "https://api.maollar.com/common",
-    buyer: "https://api.maollar.com/buyer",
-    seller: "https://api.maollar.com/seller",
-    manager: "https://api.maollar.com/manager"
+    common: "https://api.maollar.com",
+    buyer: "https://api.maollar.com",
+    seller: "https://api.maollar.com",
+    manager: "https://api.maollar.com"
   },
 };
